@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+div.container div.ball {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(43, 137, 226);
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.43,-0.31, 0.59, 1.65);
+}
+
+div.container div.ball:hover{
+    border-radius: 50%;
+    transform: rotatez(180deg);
+    cursor: pointer;
+    background-color: rgb(45, 59, 73);
+}
+/* 
+this can do when we hover body ball when animate */
+/* div.container:hover div.ball {
+    border-radius: 50%;
+    transform: rotatez(180deg);
+    cursor: pointer;
+    background-color: rgb(45, 59, 73);
+} */
